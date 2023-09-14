@@ -13,15 +13,12 @@ public class Conta {
     private int senha;
     private int nib;
     private String dataCriacao;
-    private String[] movimentos;
-    private Cliente titular;
 
-    public Conta(double saldo, int senha, int nib, String dataCriacao, String[] movimentos) {
+    public Conta(double saldo, int senha, int nib, String dataCriacao) {
         this.saldo = saldo;
         this.senha = senha;
         this.nib = nib;
         this.dataCriacao = dataCriacao;
-        this.movimentos = movimentos;
     }
     
     public double verificarSaldo(int numeroConta) {
@@ -36,7 +33,7 @@ public class Conta {
     
     public Cliente dadosTitularConta(int numeroConta) {
         //CODIGO
-        return this.titular;
+        return null;
     }
     
     public double efectuarDeposito(double montante, int numeroConta) {

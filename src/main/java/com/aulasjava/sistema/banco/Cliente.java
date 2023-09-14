@@ -9,6 +9,7 @@ package com.aulasjava.sistema.banco;
  * @author Dell
  */
 public class Cliente extends Pessoa {
+    private String id;
     private String dataCadastro;
     private Conta infoConta;
 
